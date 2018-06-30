@@ -20,7 +20,7 @@ export default () => (
         <Route exact path="/explore" component={Explore} />
         <Route exact path="/user" component={User} />
         <Route exact path="/map" component={Map} />
-        <Route exact path="/job-history" component={JobHistory} />
+        <Route exact path="/earning" component={JobHistory} />
       </Switch>
     </App>
   </Router>

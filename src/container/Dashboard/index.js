@@ -6,6 +6,11 @@ import adPhoto from '../../photo/ad_board.jpg'
 import './style.css'
 import { withStyles } from '@material-ui/core/styles'
 import CardContent from '@material-ui/core/CardContent'
+import p1 from '../../photo/ad_3.png'
+import p2 from '../../photo/ad_4.jpg'
+import p3 from '../../photo/ad_board.1.jpg'
+import p4 from '../../photo/ad_board.2.jpg'
+import p5 from '../../photo/ad_board.3.jpg'
 
 const styles = theme => ({
   card: {
@@ -46,44 +51,44 @@ const sampleData = [
     title: 'Coca-cola advertistment ',
     location: '16, Gat Lebuh China, George Town, 10300 George Town, Pulau Pinang',
     status: 'available',
-    photo: adPhoto,
+    photo: p1,
   },
   {
-    title: 'Coca-cola advertistment ',
+    title: 'Pepsi advertistment ',
     location: '16, Gat Lebuh China, George Town, 10300 George Town, Pulau Pinang',
     status: 'available',
-    photo: adPhoto,
+    photo: p2,
   },
   {
-    title: 'Coca-cola advertistment ',
+    title: '7-up advertistment ',
     location: '16, Gat Lebuh China, George Town, 10300 George Town, Pulau Pinang',
     status: 'available',
-    photo: adPhoto,
+    photo: p3,
   },
   {
-    title: 'Coca-cola advertistment ',
+    title: 'Greenday advertistment ',
     location: '16, Gat Lebuh China, George Town, 10300 George Town, Pulau Pinang',
     status: 'available',
-    photo: adPhoto,
+    photo: p4,
   },
   {
-    title: 'Coca-cola advertistment ',
+    title: 'Soda Drink advertistment ',
     location: '16, Gat Lebuh China, George Town, 10300 George Town, Pulau Pinang',
     status: 'available',
-    photo: adPhoto,
+    photo: p5,
   },
 ]
 
 class Dashboard extends Component {
   render() {
-    const { classes, theme } = this.props
+    const { classes } = this.props
     return (
       <div>
         <h2 className="sectionTitle"> Task List</h2>
         {sampleData.map((list, index) => {
           return (
             <Card className={classes.card}>
-              <Avatar src={adPhoto} classes={{ root: classes.avatar }} />
+              <Avatar src={list.photo} classes={{ root: classes.avatar }} />
               <div className={classes.details}>
                 <CardContent className={classes.content}>
                   <h4 className="card-title">{list.title}</h4>
