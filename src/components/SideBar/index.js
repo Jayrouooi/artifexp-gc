@@ -99,7 +99,9 @@ class Siderbar extends Component {
     })
 
   handleDrawerToggle = () => {
-    this.setState({ open: !this.state.open })
+    this.setState({
+      open: !this.state.open,
+    })
   }
 
   // componentWillMount() {
@@ -123,8 +125,8 @@ class Siderbar extends Component {
           onClose={this.handleClose.bind(this)}
         >
           <Divider />
-          <List>{mailFolderListItems}</List>
-        </Drawer>
+          <List> {mailFolderListItems} </List>{' '}
+        </Drawer>{' '}
       </div>
     )
   }
