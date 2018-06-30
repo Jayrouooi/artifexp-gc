@@ -5,7 +5,7 @@ import List, { ListItem, ListItemIcon, ListItemText } from '@material-ui/core/Li
 import { withStyles } from '@material-ui/core/styles'
 import classNames from 'classnames'
 import Divider from '@material-ui/core/Divider'
-import { mailFolderListItems } from './SideBarLogo'
+import MailFolderListItems from './SideBarLogo'
 import './style.css'
 const drawerWidth = 240
 
@@ -89,9 +89,9 @@ class Siderbar extends Component {
     }, 150)
   }
 
-  mailFolderListItems = () => {
-    return <div />
-  }
+  // mailFolderListItems = () => {
+  //   return <div />
+  // }
   // for sidebar drawer
   handleToggle = () =>
     this.setState({
@@ -125,14 +125,19 @@ class Siderbar extends Component {
           onClose={this.handleClose.bind(this)}
         >
           <Divider />
-          <List> {mailFolderListItems} </List>{' '}
-        </Drawer>{' '}
+          <List><MailFolderListItems onClick={this.handleLink.bind(this)} /></List>
+        </Drawer>
       </div>
     )
   }
 
   handleClose() {
     this.props.onDrawerToggle();
+  }
+
+  handleLink(link) {
+    this.props.onDrawerToggle();
+    this.context.router.history.push(link);
   }
 }
 

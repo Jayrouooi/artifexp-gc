@@ -14,7 +14,7 @@ class Header extends Component {
   render() {
     return (
     <div>
-      <AppBar position="absolute">
+      <AppBar position="fixed">
         <Toolbar>
           <IconButton color="inherit" aria-label="Menu">
             <MenuIcon onClick={this.handleDrawerToggle.bind(this)} />
