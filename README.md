@@ -57,11 +57,12 @@ And who makes up the community? As of right now, we plan to open for all staff o
 Aas a start, this gives us a lot of leeway, beacuase they won't be trying to cheat us, most likely. 
 Obviously we want to test this more, we're at a rewarding business now, we want to also test if we could gamify it.
 
-Monitoring billboards with NO IoT devices is actually vital and is the key selling point here. We are relying the system that we have, the web app, not just solving the headache of the paperwork, but it is a stepping-stone for us to do the monitoring via community.
-
 We all are software engineers, but we compliment each other skillset very well. Myself, Nathan, I'm running my own digital agency, delivering software solutions for various startups and businesses. Jian's running fis own startup, prior to that he worked for a statistical software company in Melbourne, very skilled in big data visualisation and mapping tehcnologies. JY is also a developer, one of the directors of an Australia-based startup, that solves logistic problem using blockchain technologies.
 
-ADA is a sustainable solution for monitoring outdoor billboards by dealing with big data. With the data we gather, we believe we are moving towards the right direction to becoming a Smart City.
+Monitoring billboards with NO IoT devices is actually vital and is the key selling point here. We are relying the system that we have, the web app, not just solving the headache of the paperwork, but it is a stepping-stone for us to do the monitoring via community.
+
+We arent just thinking about outdoor billboards, with the technology, as well as the community, we have our eyes on bigger things.
+Ada could transform into a location based tracking / reporting system, for example, garbage burning, missing manhole covers, fallen trees, etc. all for the benefits of our society.
 
 
 
