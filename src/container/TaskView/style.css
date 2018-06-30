@@ -76,7 +76,7 @@ table.task-ad-meta td { text-align: left; }
   color: #4CAF50;
 }
 
-.task-ad-actions button.report-btn {
+button.report-btn {
   margin-left: 5px;
   background: #F44336;
   border: 2px solid #F44336;
