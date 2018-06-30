@@ -1,30 +1,16 @@
 import React, { Component } from 'react'
 import { PropTypes } from 'prop-types'
 import Drawer from '@material-ui/core/Drawer'
-import List, { ListItem, ListItemIcon } from '@material-ui/core/List'
-import IconButton from '@material-ui/core/IconButton'
-import DashboardIcon from '@material-ui/icons/Dashboard'
-import UserListIcon from '@material-ui/icons/AccountBox'
+import List, { ListItem, ListItemIcon, ListItemText } from '@material-ui/core/List'
 import { withStyles } from '@material-ui/core/styles'
 import classNames from 'classnames'
-import AppBar from '@material-ui/core/AppBar'
-import Toolbar from '@material-ui/core/Toolbar'
-import Typography from '@material-ui/core/Typography'
-import MenuIcon from '@material-ui/icons/Menu'
-import ChevronLeftIcon from '@material-ui/icons/ChevronLeft'
-import { mailFolderListItems, otherMailFolderListItems } from './contentLogo'
 import Divider from '@material-ui/core/Divider'
+import InboxIcon from '@material-ui/icons/MoveToInbox'
+import StarIcon from '@material-ui/icons/Star'
+import { mailFolderListItems, otherMailFolderListItems } from './SideBarLogo'
 const drawerWidth = 240
 
 const styles = theme => ({
-  root: {
-    flexGrow: 1,
-    height: 667,
-    zIndex: 1,
-    overflow: 'hidden',
-    position: 'relative',
-    display: 'flex',
-  },
   appBar: {
     zIndex: theme.zIndex.drawer + 1,
     transition: theme.transitions.create(['width', 'margin'], {
@@ -104,40 +90,9 @@ class Siderbar extends Component {
     }, 150)
   }
 
-  renderDashBoard = () => {
-    return (
-      <ListItem
-        button
-        key={1}
-        value="/dashboard"
-        onClick={() => {
-          this.handleChange('/dashboard')
-        }}
-      >
-        <ListItemIcon>
-          <DashboardIcon style={{ color: 'black' }} />
-        </ListItemIcon>
-      </ListItem>
-    )
+  mailFolderListItems = () => {
+    return <div />
   }
-
-  renderUserList = () => {
-    return (
-      <ListItem
-        button
-        key={2}
-        value="/user/list"
-        onClick={() => {
-          this.handleChange('/user/list')
-        }}
-      >
-        <ListItemIcon>
-          <UserListIcon style={{ color: 'black' }} />
-        </ListItemIcon>
-      </ListItem>
-    )
-  }
-
   // for sidebar drawer
   handleToggle = () =>
     this.setState({
@@ -149,27 +104,9 @@ class Siderbar extends Component {
   }
 
   render() {
-    const topRole = this.props.topRole
-    const role = this.props.rolepermission
-    const companyLen = this.props.companyLen
     const { classes, theme } = this.props
     return (
-      <div className={classes.root}>
-        <AppBar position="absolute" className={classNames(classes.appBar, this.state.open && classes.appBarShift)}>
-          <Toolbar disableGutters={!this.state.open}>
-            <IconButton
-              color="inherit"
-              aria-label="open drawer"
-              onClick={this.handleDrawerOpen}
-              className={classNames(classes.menuButton, this.state.open && classes.hide)}
-            >
-              <MenuIcon />
-            </IconButton>
-            <Typography variant="title" color="inherit" noWrap>
-              Mini variant drawer
-            </Typography>
-          </Toolbar>
-        </AppBar>
+      <div>
         <Drawer
           variant="permanent"
           classes={{
@@ -177,11 +114,6 @@ class Siderbar extends Component {
           }}
           open={this.state.open}
         >
-          <div className={classes.toolbar}>
-            <IconButton onClick={this.handleDrawerClose}>
-              <ChevronLeftIcon />
-            </IconButton>
-          </div>
           <Divider />
           <List>{mailFolderListItems}</List>
           <Divider />
