@@ -9,7 +9,7 @@ class App extends Component {
       <div className="root">
         <Header />
         <SideBar />
-        {this.props.children}
+        <div className="root-body">{this.props.children}</div>
       </div>
     )
   }

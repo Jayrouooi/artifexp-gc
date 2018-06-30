@@ -39,3 +39,9 @@
   position: relative;
   display: flex;
 }
+
+.root-body {
+  width: 100%;
+  margin-top: 56px;
+  padding: 40px 25px;
+}
