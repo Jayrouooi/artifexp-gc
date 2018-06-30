@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import './style.css'
+import './style.scss'
 
 class TaskView extends Component {
   render() {
@@ -14,6 +14,7 @@ class TaskView extends Component {
           <div>Start Date: 1st Jan 2018</div>
           <div>End Date: 31st Dec 2018</div>
         </div>
+        
       </div>
     )
   }
