@@ -1,3 +1,7 @@
+body {
+
+}
+
 .App {
   background-color: #f5f3f5;
   text-align: center;
@@ -42,6 +46,8 @@
 
 .root-body {
   width: 100%;
+  min-height: 100vh;
   margin-top: 56px;
   padding: 40px 25px;
+  background: #f1f1f1;
 }

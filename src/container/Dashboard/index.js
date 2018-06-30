@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { PropTypes } from 'prop-types'
 import Card from '@material-ui/core/Card'
 import Avatar from '@material-ui/core/Avatar'
 import Button from '@material-ui/core/Button'
@@ -16,7 +17,7 @@ const styles = theme => ({
   card: {
     display: 'flex',
     height: '130px',
-    margin: '20px',
+    margin: '20px 0',
   },
   details: {
     display: 'flex',
@@ -35,7 +36,7 @@ const styles = theme => ({
     width: '60px',
     height: '60px',
     alignSelf: 'center',
-    margin: '10px',
+    margin: '10px 20px',
     objectFit: 'cover',
   },
   actionButton: {
@@ -48,43 +49,54 @@ const styles = theme => ({
 
 const sampleData = [
   {
-    title: 'Coca-cola advertistment ',
-    location: '16, Gat Lebuh China, George Town, 10300 George Town, Pulau Pinang',
-    status: 'available',
-    photo: p1,
+    title: 'KDU Billboard',
+    location: 'George Town',
+    status: 'expired',
+    photo: "/assets/images/ad_1.jpg",
+    link: '/task/expired'
   },
   {
-    title: 'Pepsi advertistment ',
-    location: '16, Gat Lebuh China, George Town, 10300 George Town, Pulau Pinang',
-    status: 'available',
-    photo: p2,
-  },
-  {
-    title: '7-up advertistment ',
-    location: '16, Gat Lebuh China, George Town, 10300 George Town, Pulau Pinang',
-    status: 'available',
+    title: 'AirAsia Billboard',
+    location: 'E-Gate',
+    status: 'active',
     photo: p3,
+    link: '/task/27'
   },
   {
-    title: 'Greenday advertistment ',
-    location: '16, Gat Lebuh China, George Town, 10300 George Town, Pulau Pinang',
-    status: 'available',
-    photo: p4,
+    title: "Nando's advertisement",
+    location: 'George Town',
+    status: 'active',
+    photo: p1,
+    link: '/task/27'
   },
   {
-    title: 'Soda Drink advertistment ',
-    location: '16, Gat Lebuh China, George Town, 10300 George Town, Pulau Pinang',
-    status: 'available',
-    photo: p5,
+    title: 'Pepsi advertisement ',
+    location: 'George Town',
+    status: 'active',
+    photo: p2,
+    link: '/task/27'
+  },
+  {
+    title: 'Soda Drink advertisement ',
+    location: 'George Town',
+    status: 'active',
+    photo: "/assets/images/ad_2.png",
+    link: '/task/27'
   },
 ]
 
 class Dashboard extends Component {
+  constructor(props) {
+    super(props)
+  }
+  static contextTypes = {
+    router: PropTypes.object,
+  }
   render() {
     const { classes } = this.props
     return (
       <div>
-        <h2 className="sectionTitle"> Task List</h2>
+        <h2 className="sectionTitle" style={{ margin: "0px 0px 15px 0" }}>Task List</h2>
         {sampleData.map((list, index) => {
           return (
             <Card className={classes.card}>
@@ -93,7 +105,7 @@ class Dashboard extends Component {
                 <CardContent className={classes.content}>
                   <h4 className="card-title">{list.title}</h4>
                   <p className="field-1">{list.location}</p>
-                  <p className="field-2">{list.status}</p>
+                  <div className={"task-ad-tag "+list.status}>{list.status}</div>
                 </CardContent>
                 <div style={{ flex: '1', alignSelf: 'center' }}>
                   <Button
@@ -102,6 +114,7 @@ class Dashboard extends Component {
                     variant="flat"
                     size="small"
                     color="primary"
+                    onClick={this.handleLink.bind(this,list.link)}
                   />
                 </div>
               </div>
@@ -110,6 +123,10 @@ class Dashboard extends Component {
         })}
       </div>
     )
+  }
+
+  handleLink(link) {
+    this.context.router.history.push(link);
   }
 }
 

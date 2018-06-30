@@ -6,8 +6,8 @@ import './style.css'
 
 const ActiveData = {
   type: 'active',
-  title: 'AirAsia Phuket Billboard',
-  company: 'BillBoard Media',
+  title: 'AirAsia Billboard',
+  company: 'BillBoard Media Sdn Bhd',
   address: 'E-gate, Lebuh Tengku Kudin 2, 11700 Gelugor, Pulau Pinang',
   start_date: '1st Jan 2018',
   end_date: '31st Dec 2018',
@@ -21,16 +21,16 @@ const ActiveData = {
 
 const ExpiredData = {
   type: 'expired',
-  title: 'AirAsia Phuket Billboard',
-  company: 'BillBoard Media',
-  address: 'E-gate, Lebuh Tengku Kudin 2, 11700 Gelugor, Pulau Pinang',
+  title: "Nando's advertisement",
+  company: 'ExBoard Advert Sdn Bhd',
+  address: 'Jalan Burma, 10100 George Town, Penang',
   start_date: '1st Jan 2018',
-  end_date: '31st Dec 2018',
-  image: '/assets/images/ad_board.jpg',
+  end_date: '31st June 2018',
+  image: '/assets/images/ad_1.jpg',
   map: {
-    center: 'E-gate,+Lebuh+Tengku+Kudin+2,+11700+Gelugor,+Pulau+Pinang',
+    center: 'Jalan+Burma,+10100+George+Town,+Penang',
     zoom: '16',
-    markers: 'markers=color:blue%7Clabel:B%7C5.3751537,100.3155579',
+    markers: 'markers=color:blue%7Clabel:B%7C5.417949,100.328632',
   },
 }
 
@@ -136,6 +136,7 @@ class TaskView extends Component {
     } // end - verified
 
     if (type == 'report') {
+      this.context.router.history.push("/report");
     }
   }
 }
