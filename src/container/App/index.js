@@ -16,7 +16,7 @@ class App extends Component {
     return (
       <div className="root">
         <Header onDrawerToggle={this.handleDrawerToggle.bind(this)} />
-        <SideBar open={open} />
+        <SideBar onDrawerToggle={this.handleDrawerToggle.bind(this)} open={open} />
         <div className="root-body">{this.props.children}</div>
       </div>
     )

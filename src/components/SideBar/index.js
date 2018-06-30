@@ -102,13 +102,13 @@ class Siderbar extends Component {
     this.setState({ open: !this.state.open })
   }
 
-  componentWillMount() {
-    this.setState({ open: this.props.open });
-  }
+  // componentWillMount() {
+  //   this.setState({ open: this.props.open });
+  // }
 
-  componentWillReceiveProps( nextProps ) {
-    this.setState({ open: nextProps.open });
-  }
+  // componentWillReceiveProps( nextProps ) {
+  //   this.setState({ open: nextProps.open });
+  // }
 
   render() {
     const { open } = this.state;
@@ -119,14 +119,18 @@ class Siderbar extends Component {
           classes={{
             paper: classNames(classes.drawerPaper, !this.state.open && classes.drawerPaperClose),
           }}
-          open={this.state.open}
-          onClose={() => this.setState({ open: !this.state.open })}
+          open={this.props.open}
+          onClose={this.handleClose.bind(this)}
         >
           <Divider />
           <List>{mailFolderListItems}</List>
         </Drawer>
       </div>
     )
+  }
+
+  handleClose() {
+    this.props.onDrawerToggle();
   }
 }
 
