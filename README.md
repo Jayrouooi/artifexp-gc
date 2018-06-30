@@ -36,7 +36,7 @@ So whey they finish building their work, they'll notify us, and this brings us t
 
 This ADA app is a community driven app, and it basically handles all the monitoring for us. The concept is rather simple, as a person of the 'community', ADA will send you a task, to go on and check the billboard, and you'll be rewarded with cash.
 
-This is how it works, when an outdoor billboard is up, we periodically send tasks to 5 app users, asking them to go check out a particular billboard at a specific location, when the first 3 of them get there, they tell us if the ad Ada or Tak ada. If they complete the task, they'll get RM 15, straight on. 
+This is how it works, when an outdoor billboard is up, we periodically send tasks to 5 app users, asking them to go check out a particular billboard at a specific location, when the first 5 of them get there, they tell us if the ad Ada or Tak ada. If they complete the task, they'll get RM 15, straight on. 
 Well, if no one actually went there on that day, we'll send to 5 different users the next day.
 
 And we use data and location service to make their lives so much easier to get to those billboards. We also make sure that they can only verify / report if they are WITHIN that area.
