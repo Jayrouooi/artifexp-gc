@@ -33,7 +33,6 @@ const ExpiredData = {
     markers: 'markers=color:blue%7Clabel:B%7C5.3751537,100.3155579',
   },
 }
-import './style.css'
 
 class TaskView extends Component {
   constructor(props) {
