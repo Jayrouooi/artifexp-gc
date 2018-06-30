@@ -47,7 +47,7 @@ Because ADA knows all 2,000 billboards in Penang, so when our user, or anyone re
 And that was basically our business model.
 Prior to that, with our Web platform, each permit we'll charge 10%, we basically take over all the paper work and centralise the whole process.
 An outdoor billboard costs about RM100,000 per month, so we'll get 10K from it. 
-We'll check each billboard once a month, we need 3 users to verify one billboard one month, RM15 per check, 15 * 3 * 12 months, we only spend RM 540 to ensure the billboard is always valid for a year, the margin is 95%! And over time, our system will learn and we'll not need do as many periodic checks.
+We'll check each billboard once a month, we need 5 users to verify one billboard one month, RM15 per check, 15 * 5 * 12 months, we only spend RM 540 to ensure the billboard is always valid for a year, the margin is 95%! And over time, our system will learn and we'll not need do as many periodic checks.
 On the other side, if ADA is able to report a company that breaks the law, we will get 40% of the fine issued by City Council.
 
 ADA doesn't just give you a tool to manage and monitor, but also a smart system that allows you to oversee everthing, and perdict the market for outdoor billboard advertisements, that eventually turns into more sales.
