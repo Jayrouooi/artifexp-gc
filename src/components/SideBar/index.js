@@ -5,9 +5,7 @@ import List, { ListItem, ListItemIcon, ListItemText } from '@material-ui/core/Li
 import { withStyles } from '@material-ui/core/styles'
 import classNames from 'classnames'
 import Divider from '@material-ui/core/Divider'
-import InboxIcon from '@material-ui/icons/MoveToInbox'
-import StarIcon from '@material-ui/icons/Star'
-import { mailFolderListItems, otherMailFolderListItems } from './SideBarLogo'
+import { mailFolderListItems } from './SideBarLogo'
 const drawerWidth = 240
 
 const styles = theme => ({
@@ -65,6 +63,9 @@ const styles = theme => ({
     backgroundColor: theme.palette.background.default,
     padding: theme.spacing.unit * 3,
   },
+  drawerPaper: {
+    marginTop: '56px',
+  },
 })
 
 class Siderbar extends Component {
@@ -108,6 +109,7 @@ class Siderbar extends Component {
     return (
       <div>
         <Drawer
+          PaperProps={{ classes: { root: this.props.classes.drawerPaper } }}
           variant="permanent"
           classes={{
             paper: classNames(classes.drawerPaper, !this.state.open && classes.drawerPaperClose),
@@ -116,8 +118,6 @@ class Siderbar extends Component {
         >
           <Divider />
           <List>{mailFolderListItems}</List>
-          <Divider />
-          <List>{otherMailFolderListItems}</List>
         </Drawer>
       </div>
     )
