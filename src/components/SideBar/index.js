@@ -6,6 +6,7 @@ import { withStyles } from '@material-ui/core/styles'
 import classNames from 'classnames'
 import Divider from '@material-ui/core/Divider'
 import { mailFolderListItems } from './SideBarLogo'
+import './style.css'
 const drawerWidth = 240
 
 const styles = theme => ({
@@ -101,16 +102,25 @@ class Siderbar extends Component {
     this.setState({ open: !this.state.open })
   }
 
+  componentWillMount() {
+    this.setState({ open: this.props.open });
+  }
+
+  componentWillReceiveProps( nextProps ) {
+    this.setState({ open: nextProps.open });
+  }
+
   render() {
+    const { open } = this.state;
     const { classes, theme } = this.props
     return (
       <div>
         <Drawer
-          variant="permanent"
           classes={{
             paper: classNames(classes.drawerPaper, !this.state.open && classes.drawerPaperClose),
           }}
           open={this.state.open}
+          onClose={() => this.setState({ open: !this.state.open })}
         >
           <Divider />
           <List>{mailFolderListItems}</List>
