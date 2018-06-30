@@ -63,9 +63,6 @@ const styles = theme => ({
     backgroundColor: theme.palette.background.default,
     padding: theme.spacing.unit * 3,
   },
-  drawerPaper: {
-    marginTop: '56px',
-  },
 })
 
 class Siderbar extends Component {
@@ -109,7 +106,6 @@ class Siderbar extends Component {
     return (
       <div>
         <Drawer
-          PaperProps={{ classes: { root: this.props.classes.drawerPaper } }}
           variant="permanent"
           classes={{
             paper: classNames(classes.drawerPaper, !this.state.open && classes.drawerPaperClose),
