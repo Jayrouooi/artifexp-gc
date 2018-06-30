@@ -29,3 +29,25 @@ const apiError = { code: 'unauthorized_access', message: 'You are not authorized
 //         }
 //     });
 // });
+
+exports.sendMessage = functions.https.onRequest((req,res) => {
+    
+    admin.messaging().send({
+        data: {
+            score: '850',
+            time: '2:45'
+          },
+        token: 'f0eRus8pIb4:APA91bHvnqLAdzuIIKf_9HP51_x_7RHHKAVQauG-QFcKTiZ-rTEAeGTkCu8Fsqy_5Z-CJaOS0I71Bs9rWlKU5vAhnA2skGjTDtDcV6sTZnzAzpGQdG9xbZ1wg-SxSVylRvLefnboLN8409n1f3Alph_tLCcHtXFq8w'
+    })
+    .then((response) => {
+      // Response is a message ID string.
+      console.log('Successfully sent message:', response);
+      res.status(200).send({ status: 'done' });
+    })
+    .catch((error) => {
+      console.log('Error sending message:', error);
+      res.status(403).send({ error: 'error' });
+    });
+  
+
+});
