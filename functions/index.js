@@ -37,7 +37,7 @@ exports.sendMessage = functions.https.onRequest((req,res) => {
             score: '850',
             time: '2:45'
           },
-        token: 'f0eRus8pIb4:APA91bHvnqLAdzuIIKf_9HP51_x_7RHHKAVQauG-QFcKTiZ-rTEAeGTkCu8Fsqy_5Z-CJaOS0I71Bs9rWlKU5vAhnA2skGjTDtDcV6sTZnzAzpGQdG9xbZ1wg-SxSVylRvLefnboLN8409n1f3Alph_tLCcHtXFq8w'
+        token: 'foMFxRVLa98:APA91bFGQVhR--_ONF82-g7chMQ_UIMAgBHxsorvLUKWoxepcWxbXSAC9-tNMVhQNeXeO8rbvsORkuO-j1OjOaxcCY0IPnyN0BZjaC_WLZ8MKrfjNFfInsjofrEdQ6QiiUXWf0sHiPLl'
     })
     .then((response) => {
       // Response is a message ID string.

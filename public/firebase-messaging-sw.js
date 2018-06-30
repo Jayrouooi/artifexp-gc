@@ -13,9 +13,11 @@ firebase.initializeApp({
 const messaging = firebase.messaging();
 
 messaging.setBackgroundMessageHandler(payload => {
-    const title = 'Hello World';
+    console.log('abc');
+    const title = payload.notification.title;
     const options = {
-        body: payload.data
-    };
-    return self.registration.showNotification( title, options );
-});
+       body: payload.notification.body,
+       icon: payload.notification.icon
+    }
+    return registration.showNotification(title, options);
+ })
