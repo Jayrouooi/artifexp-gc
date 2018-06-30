@@ -3,7 +3,6 @@ import Card from '@material-ui/core/Card'
 import Avatar from '@material-ui/core/Avatar'
 import Button from '@material-ui/core/Button'
 import adPhoto from '../../photo/ad_board.jpg'
-import './style.css'
 import { withStyles } from '@material-ui/core/styles'
 import CardContent from '@material-ui/core/CardContent'
 
