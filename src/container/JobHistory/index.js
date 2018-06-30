@@ -74,31 +74,22 @@ const sampleData = [
   },
 ]
 
-class Dashboard extends Component {
+class JobHistory extends Component {
   render() {
     const { classes, theme } = this.props
     return (
       <div>
-        <h2 className="sectionTitle"> Task List</h2>
+        <h2 className="sectionTitle">JobHistory</h2>
         {sampleData.map((list, index) => {
           return (
             <Card className={classes.card}>
-              <Avatar src={adPhoto} classes={{ root: classes.avatar }} />
               <div className={classes.details}>
                 <CardContent className={classes.content}>
                   <h4 className="card-title">{list.title}</h4>
                   <p className="field-1">{list.location}</p>
                   <p className="field-2">{list.status}</p>
                 </CardContent>
-                <div style={{ flex: '1', alignSelf: 'center' }}>
-                  <Button
-                    classes={{ root: classes.actionButton }}
-                    children={'View'}
-                    variant="flat"
-                    size="small"
-                    color="primary"
-                  />
-                </div>
+                <div style={{ flex: '1', alignSelf: 'center' }} />
               </div>
             </Card>
           )
@@ -108,4 +99,4 @@ class Dashboard extends Component {
   }
 }
 
-export default withStyles(styles)(Dashboard)
+export default withStyles(styles)(JobHistory)

@@ -3,3 +3,12 @@
   height: 100px;
   object-fit: covers;
 }
+.card-title {
+  margin-bottom: -10px;
+}
+.field-1 {
+  font-size: 10px;
+}
+.field-2 {
+  margin-bottom: 10px;
+}

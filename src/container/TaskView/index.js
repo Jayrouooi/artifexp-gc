@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import { PropTypes } from 'prop-types'
 import './style.css'
-
 import { STATIC_MAP_API } from '../../constants'
+import './style.css'
 
 const ActiveData = {
   type: 'active',
@@ -33,7 +33,6 @@ const ExpiredData = {
     markers: 'markers=color:blue%7Clabel:B%7C5.3751537,100.3155579',
   },
 }
-import './style.css'
 
 class TaskView extends Component {
   constructor(props) {

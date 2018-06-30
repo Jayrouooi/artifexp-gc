@@ -8,6 +8,7 @@ import Dashboard from './container/Dashboard'
 import TaskView from './container/TaskView'
 import ReportNew from './container/ReportNew'
 import Explore from './container/Explore'
+import JobHistory from './container/JobHistory'
 
 export default () => (
   <Router history={createBrowserHistory()}>
@@ -19,6 +20,7 @@ export default () => (
         <Route exact path="/explore" component={Explore} />
         <Route exact path="/user" component={User} />
         <Route exact path="/map" component={Map} />
+        <Route exact path="/job-history" component={JobHistory} />
       </Switch>
     </App>
   </Router>
