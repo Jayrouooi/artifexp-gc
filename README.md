@@ -33,35 +33,53 @@ So whey they finish building their work, they'll notify us, and this brings us t
 
 ---
 
-This ADA app is a community driven app, and it basically handles all the monitoring for us. The concept is rather simple, as a person of the 'community', ADA will send you a task, to go on and check the billboard, and you'll be rewarded with cash.
+This is ADA app - a community driven app that help us handles all the monitoring for us.
 
-This is how it works, when an outdoor billboard is up, we periodically send tasks to 5 app users, asking them to go check out a particular billboard at a specific location, when the first 5 of them get there, they tell us if the ad Ada or Tak ada. If they complete the task, they'll get RM 15, straight on. 
-Well, if no one actually went there on that day, we'll send to 5 different users the next day.
+The concept is simple, as a one of the 'community' members, ADA will send you a task, to go to check the billboard, and you'll be rewarded with cash.
 
-And we use data and location service to make their lives so much easier to get to those billboards. We also make sure that they can only verify / report if they are WITHIN that area.
-There's really not much they need to do, we'll show them the pictures that were taken by your official, when the billboard was set up, on the app. And they just have to compare them with naked eyes. If they are the same, they get RM15, if not the same, they'll get RM150!
+Let's say that, when an outdoor billboard is up, we will send tasks to 5 random app users, asking them to go check out a particular billboard at a specific location.
 
-Because ADA knows all 2,000 billboards in Penang, so when our user, or anyone really, spotted a weird looking ad, or an ad that they think shouldn't be there, they can just open our app, click explore, it'll show you the all the valid outdoor billboards. If you don't see it here, you can report to us. Just take a picture, and you'll get RM300.
+we'll show them the pictures that were taken by city council official, when the billboard was set up, they just have to compare them with naked eyes. If they are the same, they get RM15 straight on, if not the same, they can report it - once we verify it, they'll get RM150!
 
-And that was basically our business model.
-Prior to that, with our Web platform, each permit we'll charge 10%, we basically take over all the paper work and centralise the whole process.
-An outdoor billboard costs about RM100,000 per month, so we'll get 10K from it. 
-We'll check each billboard once a month, we need 5 users to verify one billboard one month, RM15 per check, 15 * 5 * 12 months, we only spend RM 900 to ensure the billboard is always valid for a year, the margin is 91%! And over time, our system will learn and we'll not need do as many periodic checks.
+We use data and location service to make their lives so much easier to get to those billboards. 
+
+We also make sure that they can only verify / report if they are WITHIN that area. 
+
+Because ADA knows all 2,000 billboards in Penang
+
+so when our user spotted a weird looking ad, or an ad that they think shouldn't be there, they can just open our app, click explore, it'll show you the all the valid outdoor billboards. If you don't see it here, you can report to us. Just take a picture, and you'll get RM300.
+
+And that was basically our business model. 
+
+Prior to that, with our Web platform, each permit we'll charge 10%, we basically take over all the paper work and centralise the whole process. 
+
+If an outdoor billboard costs about RM100,000 per year, so we'll get 10K from it. 
+
+We'll check each billboard once a month, we need 5 users to verify one billboard one month, RM15 per check, 15 * 5 * 12 months, we only spend RM 900 to ensure the billboard is always valid for a year, the margin is 91%! A
+
 On the other side, if ADA is able to report a company that breaks the law, we will get 40% of the fine issued by City Council.
 
-ADA doesn't just give you a tool to manage and monitor, but also a smart system that allows you to oversee everthing, and perdict the market for outdoor billboard advertisements, that eventually turns into more sales.
+As a start, we plan to open this community driven app to all staff of the state goverment. 
 
+this gives us a lot of leeway, because they most likely won't be trying to cheat us. Obviously we want to test this more, we're at a rewarding business now, we want to also test if we could gamify it.
+
+Monitoring billboards without spending big money is actually vital and the main selling point of our solution. 
+
+By relying on our system, we not just only solving the headache of the paperwork, but it is a stepping-stone for us to do the monitoring via the power of community.
+
+This is just a start. 
+
+Think about it - with the power of the community in our hand, we can not only monitor outdoor billboard, but some other community problems as well like open garbage burning, manhole on the street, or falling tree after a thunderstorm. 
+
+Ultimately, Our goal is build a community driven app that help solved community problem.
+
+We all are software engineers, but we compliment each other skillset very well. Myself, Nathan, I'm running my own digital agency, delivering software solutions for various startups and businesses. Jian's running fis own startup, prior to that he worked for a statistical software company in Melbourne, very skilled in big data visualisation and mapping tehcnologies. JY is also a developer, one of the directors of an Australia-based startup, that solves logistic problem using blockchain technologies.
 So hopefully we'll get a deal today with Penang City Council with our web platform and community-driven app.
 And who makes up the community? As of right now, we plan to open for all staff of the state goverment, `EXPLAIN_THIS_MORE` 
 Aas a start, this gives us a lot of leeway, beacuase they won't be trying to cheat us, most likely. 
 Obviously we want to test this more, we're at a rewarding business now, we want to also test if we could gamify it.
 
 We all are software engineers, but we compliment each other skillset very well. Myself, Nathan, I'm running my own digital agency, delivering software solutions for various startups and businesses. Jian's running fis own startup, prior to that he worked for a statistical software company in Melbourne, very skilled in big data visualisation and mapping tehcnologies. JY is also a developer, one of the directors of an Australia-based startup, that solves logistic problem using blockchain technologies.
-
-Monitoring billboards with NO IoT devices is actually vital and is the key selling point here. We are relying the system that we have, the web app, not just solving the headache of the paperwork, but it is a stepping-stone for us to do the monitoring via community.
-
-We arent just thinking about outdoor billboards, with the technology, as well as the community, we have our eyes on bigger things.
-Ada could transform into a location based tracking / reporting system, for example, garbage burning, missing manhole covers, fallen trees, etc. all for the benefits of our society.
 
 
 
