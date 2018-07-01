@@ -1,12 +1,16 @@
 # artifexp-gc
 
 Today, we are presenting you our business, ADA, Advertising Association.
+
 ADA is made up of a two major components. The Web, and The App. Each of them is very powerful and useful in their own right.
 
 Let us start with the Web, here we’re trying to make the process of requesting the permit for putting up billboard as easy as possible, both for advertisers and city council.
+
 So, here, any advertising company who wants to put up an outdoor billboard, come to our website ada.my, sign up and login to our platform. Here, they are representing Air Asia to build a billboard, so they just put in some of their basic information, click Next. 
+
 Here in step 2, they fill in the location, the time period where they will have the billboard up and running.
 Then, depends on their choice, we’ll ask for the required information to be filled, in most cases, they will want to build the infrastructure themselves, and in this example, they are building it on someone else’s land, they upload the owner permission here, obviously the dimensions and the design they are going to build.
+
 Last step, they put in the company information for the ad, so here’s Air Asia. 
 
 One thing we think that is very important is that we require them to upload the PO of Air Asia. 
@@ -20,7 +24,9 @@ For new permits that require actions, they are always on top, and if you click o
 Every thing is all here, we even have Google Maps API integrated so that you get to see the street view, and and also over time, we'll have the history of the ads being advertised her, or around here.
 
 City Council will then do the review themselves, because it is a highly skilled profession and every city has their own rules and regulations. And once you approve it, Ada will ask for the payment automatically. 
+
 Once we receive the payment, and from the invoice number, our system knows which request was it, and automatically updates the status, then notifies the company AND the City Council.
+
 They can start commencing their work on the day they applied for, right?
 So whey they finish building their work, they'll notify us, and this brings us to our 2nd component, the app.
 
