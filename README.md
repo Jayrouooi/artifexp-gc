@@ -1,36 +1,29 @@
 # artifexp-gc
 
-Today, we are presenting you our business, ADA, not American Diabetese Association, but simply an acronym for Advertising Asociation.
-
+Today, we are presenting you our business, ADA, Advertising Association.
 ADA is made up of a two major components. The Web, and The App. Each of them is very powerful and useful in their own right.
 
-Let us start with the Web, any advertising company who wants to put up an outdoor billboard, come to our website ada.my, sign up and login to our platform.
-They request a new permit, we are trying to make the process as smooth as possible, both for advertisers and city councils. Here, they are representing Air Asia to build a billboard, so they just put in some of their basic information, click Next. 
-We've simplified this lengthy process into a few steps, also everything is auto-saved into our system and they can be resumed anytime. 
-
+Let us start with the Web, here we’re trying to make the process of requesting the permit for putting up billboard as easy as possible, both for advertisers and city council.
+So, here, any advertising company who wants to put up an outdoor billboard, come to our website ada.my, sign up and login to our platform. Here, they are representing Air Asia to build a billboard, so they just put in some of their basic information, click Next. 
 Here in step 2, they fill in the location, the time period where they will have the billboard up and running.
 Then, depends on their choice, we’ll ask for the required information to be filled, in most cases, they will want to build the infrastructure themselves, and in this example, they are building it on someone else’s land, they upload the owner permission here, obviously the dimensions and the design they are going to build.
 Last step, they put in the company information for the ad, so here’s Air Asia. 
 
 One thing we think that is very important is that we require them to upload the PO of Air Asia. 
-Just from this step alone, we can already know how long Air Asia actually pays for their Ad to be up there. 
-Just a little tweak like this, we believe it mitigates the problem, of them changing the content w/o City Council permissions.
+Just from this alone, we already know how long Air Asia is actually paying for their Ad to be up there. Just a little tweak like this, we believe it mitigates the problem, of advertising companies changing the content w/o City Council permissions.
 And, submit the ad design.
 
-Our system automatically sends the request to the City Council for approval.
-We’ll get to what City Council will see in a second... but let's say City Council approves the request. 
-Now the advertising company has to pay, in order to complete the process.
-They pay to us, and once we receive the payment, and from the invoice number, our system knows which request was it, and automatically updates the status, and notifies the company AND the City Council.
-
-Let’s take a look how City Council uses ADA. Under the same platform, you login, you will get to our awesome dashboard for reporting and analysis, but more importantly, remember the permit request for Air Asia? All of them are listed here neatly.
+Let’s take a look how City Council uses ADA. Under the same platform, you login, you will get to our awesome dashboard, kinda for MVP, for reporting and analysis.
+Remember the permit request for Air Asia? All of them are listed here neatly.
 
 For new permits that require actions, they are always on top, and if you click on it, it brings you to the permit request page. 
-Every thing is all here, we even have Google Maps API integrated so that you get to see the street view, and some more information about the location, and also over time, we'll the history of the ads being advertised her, or around here.
+Every thing is all here, we even have Google Maps API integrated so that you get to see the street view, and and also over time, we'll have the history of the ads being advertised her, or around here.
 
-City Council will then do the review themselves, this is a highly skilled profession and every city has their own rules and regulations. Right now the approval process takes about 14 days, and once you approve it, like aforementioned, we will ask for the payment automatically and update we'll you immediately.
-If they paid, they can start commencing their work on the day they applied for, right?
-
+City Council will then do the review themselves, because it is a highly skilled profession and every city has their own rules and regulations. And once you approve it, Ada will ask for the payment automatically. 
+Once we receive the payment, and from the invoice number, our system knows which request was it, and automatically updates the status, then notifies the company AND the City Council.
+They can start commencing their work on the day they applied for, right?
 So whey they finish building their work, they'll notify us, and this brings us to our 2nd component, the app.
+
 
 ---
 
